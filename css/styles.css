@@ -169,7 +169,7 @@ padding-bottom: 32px;
   margin-left: auto;
 }
 
-.contacts .link-mail {
+.contacts .link-contact {
 margin-right: 50px;
 }
 
@@ -222,12 +222,17 @@ margin-right: 50px;
   border: 0px;   
 }
 
+/*HEADER CONTACTS*/
+
+
+.link-contact {
+  display: flex;
+  align-items: center;
+}
 
 .link-mail-icon {
   fill: var(--primary-text-color);
   margin-right: 10px;
-  float: left;
-  margin-top: 1px;
 }
 
 .link-mail:hover, .link-mail-icon,
@@ -238,7 +243,6 @@ margin-right: 50px;
 .link-tel-icon {
   fill: var(--primary-text-color);
   margin-right: 10px;
-  float: left;
 }
 
 .link-mail:hover, .link-tel-icon,
@@ -428,22 +432,28 @@ height: 20px;
   gap: 30px;
 }
 
-.client-logo-link {
+.client-logo-item {
   width: 170px;
   height: 92px;
   padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  
   border: 1px solid #AFB1B8;
   border-radius: 4px ;
   cursor: pointer;
 }
 
-.client-logo-icon {
-  width: 50%;
-  height: 50%;
+
+.client-logo-link {
+  width: 100%;
+  height: 100%;
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  
+
+.client-logo-icon {
+    display: flex;
   align-items: center;
   justify-content: center;
   fill: var(--social-icon-color);
@@ -454,11 +464,10 @@ height: 20px;
   fill: var(--accent-blue-color);
 }
 
-.client-logo-link:hover,
-.client-logo-link:focus {
+.client-logo-item:hover,
+.client-logo-item:focus {
   border-color: var(--accent-blue-color);
 }
-
 /* PORTFOLIO */
 
 .filter-list-button {
